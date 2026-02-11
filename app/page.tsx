@@ -9,18 +9,18 @@ export default function FullStackJourneyPage() {
     <div className={`min-h-screen flex items-center justify-center bg-white p-8 ${poppins.className}`}>
       <div className="w-full max-w-3xl text-center">
         {/* Main Heading */}
-        <h1 className="text-6xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-purple-700 drop-shadow-lg mb-12">
+        <h1 className="text-7xl font-serif font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-purple-700 drop-shadow-lg mb-12">
           Full Stack Journey
         </h1>
 
         {/* Step */}
-        <h2 className="text-4xl md:text-5xl font-bold text-purple-900 drop-shadow-md mb-6">
+        <h2 className="text-5xl font-bold text-blue-900 drop-shadow-md mb-6">
           Step 01
         </h2>
 
         {/* Substep / Section */}
         <div className="space-y-6">
-          <h3 className="text-3xl md:text-4xl font-semibold text-purple-800 drop-shadow-sm">
+          <h3 className="text-3xl md:text-4xl font-semibold text-blue-800 drop-shadow-sm">
             Authentications
           </h3>
           

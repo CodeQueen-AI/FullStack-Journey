@@ -1,16 +1,17 @@
 "use client";
 import { Poppins } from "next/font/google";
 import { AiOutlineEye } from "react-icons/ai";
+import Image from "next/image";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export default function SignUpPage() {
   return (
-    <div className={`min-h-screen flex bg-white ${poppins.className}`}>
+    <div className={`min-h-screen flex ${poppins.className}`}>
       {/* Left Form Section */}
-      <div className="w-full md:w-1/2 flex items-center justify-center p-8">
-        <div className="bg-white w-full max-w-md">
-          <h1 className="text-4xl font-extrabold text-center mb-8 text-purple-700">
+      <div className="w-full md:w-1/2 flex items-start justify-center p-10">
+        <div>
+          <h1 className="text-4xl font-extrabold text-purple-900 mb-8">
             Create Your Account
           </h1>
 
@@ -22,7 +23,7 @@ export default function SignUpPage() {
               </label>
               <input
                 type="text"
-                className="w-full border-b border-gray-300 p-1 focus:outline-none focus:border-purple-700"
+                className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-purple-900"
               />
             </div>
 
@@ -33,7 +34,7 @@ export default function SignUpPage() {
               </label>
               <input
                 type="email"
-                className="w-full border-b border-gray-300 p-1 focus:outline-none focus:border-purple-700"
+                className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-purple-900"
               />
             </div>
 
@@ -44,7 +45,7 @@ export default function SignUpPage() {
               </label>
               <input
                 type="password"
-                className="w-full border-b border-gray-300 p-1 focus:outline-none focus:border-purple-700"
+                className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-purple-900"
               />
               <span className="absolute right-2 top-6 cursor-pointer text-gray-500">
                 <AiOutlineEye size={20} />
@@ -58,7 +59,8 @@ export default function SignUpPage() {
               </label>
               <input
                 type="password"
-                className="w-full border-b border-gray-300 p-1 focus:outline-none focus:border-purple-700"/>
+                className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-purple-900"
+              />
               <span className="absolute right-2 top-6 cursor-pointer text-gray-500">
                 <AiOutlineEye size={20} />
               </span>
@@ -67,7 +69,7 @@ export default function SignUpPage() {
             {/* Sign Up Button */}
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-700 to-purple-500 text-white font-semibold py-3 rounded-full shadow-md hover:shadow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 ease-in-out cursor-pointer"
+              className="w-full bg-gradient-to-r from-purple-900 to-purple-700 text-white font-semibold py-3 rounded-full shadow-md hover:shadow-lg hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 ease-in-out cursor-pointer"
             >
               Sign Up
             </button>
@@ -75,12 +77,23 @@ export default function SignUpPage() {
             {/* Already have an account */}
             <p className="text-center text-sm text-gray-600 mt-0">
               Already have an account?{" "}
-              <a href="/login" className="text-purple-700 font-medium">
+              <a href="/login" className="text-purple-900 font-medium">
                 Login
               </a>
             </p>
           </form>
         </div>
+      </div>
+
+   
+      <div className="w-1/2 hidden md:flex justify-center items-center">
+        <Image
+          src="/Signup.png"
+          alt="Sign up illustration"
+          className="object-contain h-full"
+          width={500}
+          height={600}
+        />
       </div>
     </div>
   );

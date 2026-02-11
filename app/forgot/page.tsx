@@ -24,7 +24,6 @@ export default function ForgotPasswordPage() {
               </label>
               <input
                 type="email"
-                placeholder="Email"
                 className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-purple-900"
               />
             </div>
@@ -36,7 +35,6 @@ export default function ForgotPasswordPage() {
               </label>
               <input
                 type="text"
-                placeholder="OTP"
                 className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-purple-900"
               />
             </div>
@@ -48,7 +46,6 @@ export default function ForgotPasswordPage() {
               </label>
               <input
                 type="password"
-                placeholder="New Password"
                 className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-purple-900"
               />
               <span className="absolute right-2 top-9 text-gray-500 cursor-pointer">
@@ -63,7 +60,6 @@ export default function ForgotPasswordPage() {
               </label>
               <input
                 type="password"
-                placeholder="Confirm Password"
                 className="w-full border-b border-gray-300 p-2 focus:outline-none focus:border-purple-900"
               />
               <span className="absolute right-2 top-9 text-gray-500 cursor-pointer">

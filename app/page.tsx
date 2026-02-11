@@ -75,23 +75,12 @@ export default function SignUpPage() {
             <div className="flex gap-4">
               <div className="w-1/2">
                 <label className="block text-xs font-medium text-gray-500 tracking-wide uppercase mb-1">
-                  First Name
+                  Name
                 </label>
                 <input
                   type="text"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  className="w-full border-b border-gray-300 p-1 focus:outline-none focus:border-blue-950"
-                />
-              </div>
-              <div className="w-1/2">
-                <label className="block text-xs font-medium text-gray-500 tracking-wide uppercase mb-1">
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
                   className="w-full border-b border-gray-300 p-1 focus:outline-none focus:border-blue-950"
                 />
               </div>
@@ -148,65 +137,11 @@ export default function SignUpPage() {
               </span>
             </div>
 
-            {/* Phone Number - only for Tutor */}
-            {userType === "tutor" && (
-              <div>
-                <label className="block text-xs font-medium text-gray-500 tracking-wide uppercase mb-1">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="w-full border-b border-gray-300 p-1 focus:outline-none focus:border-blue-950"
-                />
-              </div>
-            )}
 
-            {/* Date of Birth */}
-            <div>
-              <label className="block text-xs font-medium text-gray-500 tracking-wide uppercase mb-1">
-                Date of Birth
-              </label>
-              <input
-                type="date"
-                value={dob}
-                onChange={(e) => setDob(e.target.value)}
-                className="w-full border-b border-gray-300 p-1 focus:outline-none focus:border-blue-950"
-              />
-            </div>
 
             {/* Error Message */}
             {errorMessage && <p className="text-red-500 text-sm mt-1">{errorMessage}</p>}
 
-            {/* Toggle Buttons */}
-            <div className="flex justify-center my-6">
-              <div className="flex border border-blue-950 rounded-full overflow-hidden w-fit">
-                <button
-                  type="button"
-                  onClick={() => setUserType("tutor")}
-                  className={`px-6 py-2 font-medium transition-all rounded-full ${
-                    userType === "tutor"
-                      ? "bg-gradient-to-r from-blue-950 to-blue-700 text-white shadow-md"
-                      : "bg-white text-blue-950 cursor-pointer transition-all"
-                  }`}
-                >
-                  Tutor
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setUserType("student")}
-                  className={`px-6 py-2 font-medium transition-all rounded-full ${
-                    userType === "student"
-                      ? "bg-gradient-to-r from-blue-950 to-blue-700 text-white shadow-md"
-                      : "bg-white text-blue-950 cursor-pointer transition-all"
-                  }`}
-                >
-                  Student
-                </button>
-              </div>
-            </div>
 
             {/* Sign Up Button */}
             <button

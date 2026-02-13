@@ -25,3 +25,5 @@ let arr = [1,2,3,4];
 
 // console.log(ans)
 
+// indexOf
+console.log(arr.indexOf(3));  

@@ -41,3 +41,6 @@ console.log(obj['name']);
 // Change the value of object
 obj.age = 25;              
 console.log(obj.age);      
+
+// Freeze the object
+Object.freeze(obj);

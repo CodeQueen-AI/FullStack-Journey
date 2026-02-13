@@ -54,7 +54,11 @@ function greet(){
 }
 greet()
 
-
+// Arguments & Parameters
+function greet(name) {   // parameter
+    console.log("Hello " + name);
+}
+greet("CodeQueen");      // argument
 
 
 function add(a, b, c){

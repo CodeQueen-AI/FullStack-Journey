@@ -31,11 +31,13 @@
 // 2-Objects
 var obj = {
     name : 'CodeQueen',
-    age = 17
+    age : 17
 }
-// Access the value of objects
-obj.name
-obj.[name]
 
-// change the value
-obj.age = 25
+// Access the value of object
+console.log(obj.name);    
+console.log(obj['name']);
+
+// Change the value of object
+obj.age = 25;              
+console.log(obj.age);      

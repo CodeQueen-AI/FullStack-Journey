@@ -55,7 +55,10 @@
 // consolelog(add.length)
 
 // return function
-function abcd(){
-    return "Hello Wrold!";
-}
-var ans = abcd()
+// function abcd(){
+//     return "Hello Wrold!";
+// }
+// var ans = abcd()
+
+// 4-Asynchronous Javascript Coding
+await fetch(`https://randomuserme/api/`);

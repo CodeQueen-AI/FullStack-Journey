@@ -1,69 +1,69 @@
 // 1-Array
-// let arr = [1,2,3,4];
+let arr = [1,2,3,4];
 
 // forEach
-// arr.forEach(function(val){
-//     console.log(val + " hello")
-// })
+arr.forEach(function(val){
+    console.log(val + " hello")
+})
 
 // Map
-// var newarr = arr.map(function(val){
-//     return val*3
-// })
-// console.log(newarr)
+var newarr = arr.map(function(val){
+    return val*3
+})
+console.log(newarr)
 
 // filter
-// arr.filter(function(val){
-//     if(val > 2) {return true}
-//     else return false;
-// })
+arr.filter(function(val){
+    if(val > 2) {return true}
+    else return false;
+})
 
 // find
-// var ans = arr.find(function(val){
-//     if(val === 2) return val;
-// })
+var ans = arr.find(function(val){
+    if(val === 2) return val;
+})
 
-// console.log(ans)
+console.log(ans)
 
 // indexOf
-// console.log(arr.indexOf(3));  
+console.log(arr.indexOf(3));  
 
 // 2-Objects
-// var obj = {
-//     name : 'CodeQueen',
-//     age : 17
-// }
+var obj = {
+    name : 'CodeQueen',
+    age : 17
+}
 
 // Access the object value
-// console.log(obj.name);    
-// console.log(obj['name']);
+console.log(obj.name);    
+console.log(obj['name']);
 
 // Change the object value
-// obj.age = 25;              
-// console.log(obj.age);      
+obj.age = 25;              
+console.log(obj.age);      
 
 // Freeze the object value
-// Object.freeze(obj);
+Object.freeze(obj);
 
 // Seal the object value
-// Object.seal(obj);
+Object.seal(obj);
 
 // 3-Functions
-// function add(a, b, c){
-//     return a + b + c
-// }
-// consolelog(add.length)
+function add(a, b, c){
+    return a + b + c
+}
+consolelog(add.length)
 
 // return function
-// function abcd(){
-//     return "Hello Wrold!";
-// }
-// var ans = abcd()
+function abcd(){
+    return "Hello Wrold!";
+}
+var ans = abcd()
 
 // 4-Asynchronous Javascript Coding
-// var blob =  await fetch(`https://randomuser.me/api/`);
-// var res = await blob.json();
-// console.log(res);
+var blob =  await fetch(`https://randomuser.me/api/`);
+var res = await blob.json();
+console.log(res);
 
 async function abcd(){
     var blob = await fetch(`https://randomuser.me/api/`);

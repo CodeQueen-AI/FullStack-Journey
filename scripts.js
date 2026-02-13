@@ -70,3 +70,4 @@ async function abcd(){
     var ans = blob.json();
     console.log(ans.results)
 }
+abcd()

@@ -47,3 +47,10 @@ Object.freeze(obj);
 
 // Seal the object value
 Object.seal(obj);
+
+// 3-Functions
+function add(a, b, c){
+    return a + b + c
+}
+consolelog(add.length)
+

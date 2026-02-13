@@ -49,6 +49,14 @@ Object.freeze(obj);
 Object.seal(obj);
 
 // 3-Functions
+function greet(){
+    console.log('Hello CodeQueen');
+}
+greet()
+
+
+
+
 function add(a, b, c){
     return a + b + c
 }

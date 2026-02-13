@@ -66,23 +66,29 @@ function abcd(){
 }
 var ans = abcd()
 
+// Arrow Function
+const greet = () => {
+    console.log("Hello");
+};
+
+greet();
+ 
+// Function Length
 function add(a, b, c){
     return a + b + c
 }
 consolelog(add.length)
 
-// return function
 
+// // 4-Asynchronous Javascript Coding
+// var blob =  await fetch(`https://randomuser.me/api/`);
+// var res = await blob.json();
+// console.log(res);
 
-// 4-Asynchronous Javascript Coding
-var blob =  await fetch(`https://randomuser.me/api/`);
-var res = await blob.json();
-console.log(res);
-
-async function abcd(){
-    var blob = await fetch(`https://randomuser.me/api/`);
-    var ans = await blob.json();
-    console.log(ans.results)
-    console.log(ans.results[0].name) //username
-}
-abcd()
+// async function abcd(){
+//     var blob = await fetch(`https://randomuser.me/api/`);
+//     var ans = await blob.json();
+//     console.log(ans.results)
+//     console.log(ans.results[0].name) //username
+// }
+// abcd()

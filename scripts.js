@@ -61,4 +61,6 @@
 // var ans = abcd()
 
 // 4-Asynchronous Javascript Coding
-await fetch(`https://randomuserme/api/`);
+var blob =  await fetch(`https://randomuserme/api/`);
+var res = await blob.json();
+console.log(res);

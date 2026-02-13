@@ -68,5 +68,5 @@
 async function abcd(){
     var blob = await fetch(`https://randomuser.me/api/`);
     var ans = blob.json();
-    console.log(ans)
+    console.log(ans.results)
 }

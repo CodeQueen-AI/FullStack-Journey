@@ -30,3 +30,8 @@ app.get('/error', (req, res, next) => {
     next(error);   
 });
 
+// 2-Error Route
+app.get('/error', (req, res, next) => {
+    next(new Error("Simple Error"));
+});
+

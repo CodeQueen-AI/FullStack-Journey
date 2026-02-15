@@ -24,7 +24,9 @@ const app = express()
 // app.listen(3000)
 
 // Error Handling
-app.use(errm , req, res, next) => {
-    console.error(err.stack)
-    res.status(500).send('Something Broke!')
-}
+// 1-Route that throws error
+app.get('/error', (req, res, next) => {
+    const error = new Error("Something went wrong!");
+    next(error);   
+});
+

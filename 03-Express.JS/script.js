@@ -13,6 +13,11 @@ const app = express()
 // app.listen(3000)
 
 // Middleware
-app.use(function(req , res, next)) {
+app.use(function(req , res, next)){
     console.log('Run Middleware')
 }
+app.get('/' , (req, res) => {
+    res.send('Hello World')
+})
+
+app.listen(3000)

@@ -17,7 +17,7 @@ app.use(function(req , res, next){
     console.log('Run Middleware')
 })
 app.get('/' , (req, res) => {
-    res.send('Hello World')
+    res.send('Hello World from Middleware')
 })
 
 app.listen(3000)

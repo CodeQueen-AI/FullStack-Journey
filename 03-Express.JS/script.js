@@ -26,12 +26,6 @@ const app = express()
 // Error Handling
 // 1-Route that throws error
 app.get('/error', (req, res, next) => {
-    const error = new Error("Something went wrong!");
-    next(error);   
-});
-
-// 2-Error Route
-app.get('/error', (req, res, next) => {
     next(new Error("Simple Error"));
 });
 

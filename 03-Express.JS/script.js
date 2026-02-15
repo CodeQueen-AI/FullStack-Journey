@@ -35,3 +35,9 @@ app.get('/error', (req, res, next) => {
     next(new Error("Simple Error"));
 });
 
+// 3-Simple Error Middleware
+app.use((err, req, res, next) => {
+    res.status(500).send("Something went wrong!");
+});
+
+

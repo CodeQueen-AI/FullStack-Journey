@@ -13,12 +13,18 @@ const app = express()
 // app.listen(3000)
 
 // Middleware
-app.use(function(req , res, next){
-    console.log('Run Middleware')
-    next()
-})
-app.get('/' , (req, res) => {
-    res.send('Hello World from Middleware')
-})
+// app.use(function(req , res, next){
+//     console.log('Run Middleware')
+//     next()
+// })
+// app.get('/' , (req, res) => {
+//     res.send('Hello World from Middleware')
+// })
 
-app.listen(3000)
+// app.listen(3000)
+
+// Error Handling
+app.use(errm , req, res, next) => {
+    console.error(err.stack)
+    res.status(500).send('Something Broke!')
+}

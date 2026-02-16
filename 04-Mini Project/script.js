@@ -17,5 +17,9 @@ app.get("/", (req, res) => {
 app.get("/profile/:name", (req, res) => {
     res.send(`Welcome, ${req.params.name}`);
 });
+
+// Age
+
+
 app.listen(3000)
 

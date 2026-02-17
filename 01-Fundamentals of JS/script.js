@@ -2,11 +2,7 @@
 
 
 
-// 3-Functions
-function greet(){
-    console.log('Hello CodeQueen');
-}
-greet()
+
 
 // Arguments & Parameters
 function greet(name) {   // parameter

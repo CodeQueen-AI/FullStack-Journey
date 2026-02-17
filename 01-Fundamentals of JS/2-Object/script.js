@@ -23,6 +23,9 @@ console.log(obj.city);
 // Object Keys
 console.log(Object.keys(obj));
 
+// Object Values
+console.log(Object.values(obj));
+
 // Freeze the object value
 Object.freeze(obj);
 

@@ -10,3 +10,6 @@ greet()
 function greet(name) {  
     console.log("Hello " + name);
 }
+
+// Arguments
+greet("CodeQueen");      

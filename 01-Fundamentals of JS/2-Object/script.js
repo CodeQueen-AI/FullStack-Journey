@@ -20,6 +20,9 @@ console.log(obj.city);
 delete obj.city;
 console.log(obj.city); 
 
+// Object Keys
+console.log(Object.keys(obj));
+
 // Freeze the object value
 Object.freeze(obj);
 

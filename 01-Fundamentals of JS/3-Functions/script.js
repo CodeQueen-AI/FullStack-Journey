@@ -31,3 +31,8 @@ function greet(name = "Guest") {
 var greet = function() {
     console.log("Hello");
 };
+
+// Arrow Function
+const greet = () => {
+    console.log("Hello");
+};

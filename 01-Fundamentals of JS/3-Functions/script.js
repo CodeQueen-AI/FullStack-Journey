@@ -26,3 +26,8 @@ console.log(result);
 function greet(name = "Guest") {
     console.log(name);
 }
+
+// Function Expression
+var greet = function() {
+    console.log("Hello");
+};

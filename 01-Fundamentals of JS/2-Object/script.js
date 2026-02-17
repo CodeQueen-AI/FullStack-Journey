@@ -12,6 +12,10 @@ console.log(obj['name']);
 obj.age = 25;              
 console.log(obj.age);      
 
+// Add new property
+obj.city = "Lahore";
+console.log(obj.city);
+
 // Freeze the object value
 Object.freeze(obj);
 

@@ -26,6 +26,9 @@ console.log(Object.keys(obj));
 // Object Values
 console.log(Object.values(obj));
 
+// Object Entries
+console.log(Object.entries(obj));
+
 // Freeze the object value
 Object.freeze(obj);
 

@@ -34,3 +34,8 @@ Object.freeze(obj);
 
 // Seal the object value
 Object.seal(obj);
+
+// Destructuring
+let { name, age } = obj;
+console.log(name);
+console.log(age);

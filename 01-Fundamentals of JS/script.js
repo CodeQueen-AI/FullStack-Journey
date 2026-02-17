@@ -4,11 +4,6 @@
 
 
 
-// Arguments & Parameters
-function greet(name) {   // parameter
-    console.log("Hello " + name);
-}
-greet("CodeQueen");      // argument
 
 // Return Value
 function abcd(){

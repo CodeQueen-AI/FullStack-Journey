@@ -42,3 +42,8 @@ const options = {
     key : fs.readFileSync('key.pem'),
     cert : fs.readFileSync('cert.pem')
 }
+
+// create server
+const server = https.createServer(options, function(req, res) {
+    res.writeHead(200)  //Stats 200 OK
+})

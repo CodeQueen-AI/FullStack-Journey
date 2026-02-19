@@ -36,3 +36,8 @@ server.listen(3000);
 // 3-Https
 const https = require('https')
 const fs = require('fs')
+
+// SSL options
+const options = {
+    key :fs.readFileSync('key.pem')
+}

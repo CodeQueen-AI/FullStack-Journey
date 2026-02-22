@@ -10,10 +10,9 @@ app.get('/' , (req, res) => {
 app.get('/about' , (req , res) => {
     res.send('Hello World from About Page!!')
 })
-app.listen(3000)
 
 // Service Route
-app.get('/about' , (req , res) => {
+app.get('/service' , (req , res) => {
     res.send('Hello World from Service Page!')
 })
 app.listen(3000)
